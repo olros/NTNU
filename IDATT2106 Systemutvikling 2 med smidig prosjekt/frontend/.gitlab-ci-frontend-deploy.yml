@@ -1,0 +1,36 @@
+.frontend-deploy:
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      changes:
+        - frontend/**/*
+        - frontend/*
+      when: on_success
+    - when: never
+  before_script:
+    - cd frontend
+  cache:
+    paths:
+      - frontend/node_modules/
+
+frontend-build-master:
+  extends: .frontend-deploy
+  image: node:12
+  stage: build
+  script:
+    - yarn
+    - yarn build
+  artifacts:
+    paths:
+      - frontend/build/
+    expire_in: 15 mins
+
+frontend-deploy-master:
+  extends: .frontend-deploy
+  stage: deploy
+  image: andreysenov/firebase-tools:latest
+  needs: [frontend-build-master]
+  script:
+    - firebase deploy --only hosting
+  environment:
+    name: production
+    url: https://gidd-idatt2106.web.app

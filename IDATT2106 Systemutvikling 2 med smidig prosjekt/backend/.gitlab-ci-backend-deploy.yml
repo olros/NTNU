@@ -1,0 +1,22 @@
+.backend-deploy:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      changes:
+        - backend/**/*
+        - backend/*
+      when: on_success
+    - when: never
+  before_script:
+    - cd backend
+
+backend-deploy-master:
+  extends: .backend-deploy
+  stage: deploy
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$REGISTRY_URL\":{\"username\":\"$REGISTRY_USERNAME\",\"password\":\"$REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - chmod +x ./mvnw
+    - /kaniko/executor --cache-ttl=0h --cache=false --context . --destination giddregistry.azurecr.io/gidd:latest

@@ -1,0 +1,5 @@
+include:
+  - local: frontend/.gitlab-ci-frontend-test.yml
+  - local: frontend/.gitlab-ci-frontend-deploy.yml
+  - local: backend/.gitlab-ci-backend-test.yml
+  - local: backend/.gitlab-ci-backend-deploy.yml

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  gidd_db:
+    image: giddregistry.azurecr.io/mysql:5.7
+    container_name: gidd_db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=local
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=local
+
+  gidd:
+    container_name: gidd
+    depends_on:
+      - gidd_db
+    # Use image in Azure and build locally, don't use both at once
+    # image: giddregistry.azurecr.io/gidd:latest
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:mysql://gidd_db:3306/local?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
