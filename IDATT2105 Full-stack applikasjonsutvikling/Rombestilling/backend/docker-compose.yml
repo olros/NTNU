@@ -1,0 +1,25 @@
+version: '3'
+services:
+  rb_db:
+    image: mysql:5.7
+    container_name: rb_db
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=local
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=local
+
+  phpmyadmin_rb:
+    container_name: phpmyadmin_rb
+    depends_on:
+      - rb_db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8000:80'
+    environment:
+      PMA_HOST: rb_db
+      MYSQL_ROOT_PASSWORD: password

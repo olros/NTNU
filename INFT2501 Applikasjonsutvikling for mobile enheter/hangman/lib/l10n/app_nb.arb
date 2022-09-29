@@ -1,0 +1,14 @@
+{
+  "title": "Hangman | INFT2501 Prosjekt",
+  "info_paragraph1": "Hei! Velkommen til denne Hangman-appen!",
+  "info_paragraph2": "Hangman er et spill hvor du prøver å gjette et ord som er representert med en rad med bindestreker. Hver bindestrek representerer en bokstav i ordet. Hvis du gjetter en bokstav som forekommer i ordet, fylles bokstaven ut på alle de riktige posisjonene.",
+  "info_paragraph3": "Hvis du gjetter på en bokstav som ikke forekommer i ordet, tegnes en ny del av en strekmann som henges på en galge. Spillet er over når tegningen er ferdig (du taper), eller når du har gjettet hele ordet (du vinner).",
+  "info_paragraph4": "Hvis du vil lese reglene igjen etter å ha startet å spille, kan du alltid klikke på tilbake-knappen for å komme tilbake hit.",
+  "info_paragraph5": "Spillet er tilgjengelig på to språk: Engelsk og Norsk. Endre språk i Systeminnstillingene for å endre språket i appen.",
+  "info_play": "Spill!",
+  "game_you_won": "Du gjettet riktig ord. Gratulerer!",
+  "game_you_lost": "Du brukte for mange forsøk og strekmannen ble dessverre hengt :( Riktig ord var: ",
+  "game_restart": "Restart spillet",
+  "game_letters": "abcdefghijklmnopqrstuvwxyzæøå",
+  "game_words": "Bunad,Ostehøvel,Brunost,Fårikål,Butikk,Sørlandet,Flyplass"
+}

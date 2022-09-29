@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTaskB">
+
+    <TextView
+        android:id="@+id/display_number1"
+        android:layout_width="370dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Tall 1: 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display_number2"
+        android:layout_width="371dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Tall 2: 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_number1" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_number2" />
+
+    <EditText
+        android:id="@+id/upperlimit"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/upperLimit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="365dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="addOnClick"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperlimit" />
+
+    <Button
+        android:id="@+id/multiply_button"
+        android:layout_width="365dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="multiplyOnClick"
+        android:text="@string/multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="366dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_number2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="366dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/upperLimit"
+        app:layout_constraintBottom_toTopOf="@+id/upperlimit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

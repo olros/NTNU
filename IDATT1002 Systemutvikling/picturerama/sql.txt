@@ -1,0 +1,60 @@
+User-tabell:
+`CREATE TABLE USERS (
+    id int(6) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username varchar(64) NOT NULL,
+    email varchar(320) NOT NULL,
+    hash varchar(64) NOT NULL,
+    salt varchar(32) NOT NULL
+)`
+
+Photo-tabell:
+`CREATE TABLE PHOTOS (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(256) NOT NULL,
+    url VARCHAR(1024),
+    latitude decimal(15,13),
+    longitude decimal(15,13),
+    width INT(5),
+    height INT(5),
+    file_type VARCHAR(64),
+    file_size INT(9),
+    aperture varchar(64),
+    exposure_time varchar(64),
+    camera_model VARCHAR(256),
+    time varchar(64),
+    user_id INT(6) UNSIGNED NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES USERS(id)
+)`
+
+Album-tabell:
+`CREATE TABLE ALBUMS (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(256) NOT NULL,
+    user_id INT(6) UNSIGNED NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES USERS(id)
+)`
+
+Albumphoto-tabell:
+`CREATE TABLE ALBUMPHOTO (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    album_id INT(6) UNSIGNED NOT NULL,
+    FOREIGN KEY (album_id) REFERENCES ALBUMS(id),
+    photo_id INT(6) UNSIGNED NOT NULL,
+    FOREIGN KEY (photo_id) REFERENCES PHOTOS(id)
+)`
+
+Tags-tabell:
+`CREATE TABLE TAGS (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    tag varchar(64) NOT NULL,
+    photo_id INT(6) UNSIGNED NOT NULL,
+    FOREIGN KEY (photo_id) REFERENCES PHOTOS(id)
+)`
+
+Opprett ny bruker:
+`INSERT INTO `USERS` (`username`, `email`, `hash`, `salt`) VALUES ('brukernavn', 'epost', 'hash', 'salt')`
+
+Hent brukerid med brukernavn og passord:
+SELECT `id` FROM `USERS` WHERE `hash` = 'hash AND `username` = 'brukernavn'
+
+

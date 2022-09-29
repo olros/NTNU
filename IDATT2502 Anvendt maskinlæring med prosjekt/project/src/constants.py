@@ -1,0 +1,61 @@
+# DQN/DDQN hyperparams and constants
+EPSILON_DECAY_RATE = 0.99
+MIN_EPSILON = 0.01
+GAMMA = 0.90
+BATCH_SIZE = 32
+LEARNING_RATE = 0.00025
+MEMORY_SIZE = 20000
+COPY_STEPS = 1e4
+EPSILON = 1
+
+# PPO hyperparams and constants
+STEP_AMOUNT = 4000
+UPDATE_FREQUENCY = 5
+CLIP_RANGE = 0.2
+ACTOR_LEARNING_RATE = 0.00025
+CRITIC_LEARNING_RATE = 0.001
+OPTIMIZER_EPSILON = 1e-4
+PPO_GAMMA = 0.95
+PPO_LAMBDA = 0.95
+PPO_EPOCHS = 30
+
+
+# Env constants
+CHECKPOINT_AMOUNT = 10
+REPLAY_FRAME_COUNT = 4
+SKIP_AND_STACK_AMOUNT = 4
+ENV_HEIGHT = 84
+ENV_WIDTH = 84
+
+# WandB constants
+# These needs to be changed to reflect your wandb project
+WANDB_ENTITY = "idatt2502-project"
+WANDB_PPO_PROJECT = "super-mario-ppo"
+WANDB_DDQN_PROJECT = "super-mario-ddqn"
+WANDB_DQN_PROJECT = "super-mario-dqn"
+MIN_WANDB_VIDEO_REWARD = 1000
+
+MODEL_SAVE_DIR = "trained_models"
+
+PPO_MODEL_SAVE_NAME = f"{MODEL_SAVE_DIR}/PPO-Mario-v0.pt"
+MODEL_SAVE_NAME = f"{MODEL_SAVE_DIR}/DDQN-MARIO-v1.pt"
+TARGET_MODEL_SAVE_NAME = f"{MODEL_SAVE_DIR}/Target-DDQN-MARIO-v1.pt"
+
+REPLAY_BUFFER_DIR = "memory"
+
+STATE_SAVE_NAME = f"{REPLAY_BUFFER_DIR}/state_mem.pt"
+ACTION_SAVE_NAME = f"{REPLAY_BUFFER_DIR}/action_mem.pt"
+REWARD_SAVE_NAME = f"{REPLAY_BUFFER_DIR}/reward_mem.pt"
+NEXT_STATE_SAVE_NAME = f"{REPLAY_BUFFER_DIR}/next_state_mem.pt"
+DONE_SAVE_NAME = f"{REPLAY_BUFFER_DIR}/done_mem.pt"
+
+
+PICKLE_FOLDER_NAME = "pickle"
+TOTAL_REWARDS_PICKLE = f"{PICKLE_FOLDER_NAME}/total_rewards.pkl"
+NUM_IN_QUEUE_PICKLE = f"{PICKLE_FOLDER_NAME}/num_in_queue.pkl"
+ENDING_POSISTION_PICKLE = f"{PICKLE_FOLDER_NAME}/ending_position.pkl"
+
+WORLD = "SuperMarioBros-1-1-v0"
+EPISODES = 5000
+
+AGENT_ACTIONS = [["right"], ["right", "A"]]

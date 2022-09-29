@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C++ compiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      *,
+      html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: rgb(236, 152, 42);
+      }
+      .content {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+      h1 {
+        font-size: 120px;
+        padding: 10px;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+      }
+      textarea {
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        resize: none;
+        font-family: monospace;
+      }
+      button {
+        color: black;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: cornsilk;
+      }
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 60px;
+        }
+        .content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>C++ compile!</h1>
+    <form class="content" onsubmit="submitForm(event)">
+      <div class="input">
+        <label for="inputArea">Input code:</label>
+        <textarea id="inputArea" width="100%" name="inputArea" rows="20">
+#include <iostream>
+using namespace std;
+int main()
+{
+  {
+    cout << "Hello world" << endl;
+  }
+}</textarea
+        >
+      </div>
+      <div class="input">
+        <label for="inputArea">Output:</label>
+        <textarea
+          disabled
+          id="outputArea"
+          width="100%"
+          name="outputArea"
+          rows="20"
+        ></textarea>
+      </div>
+      <button type="submit">Compile</button>
+      <p id="info"></p>
+    </form>
+    <script>
+      const info = document.getElementById("info");
+      const outputArea = document.getElementById("outputArea");
+      const submitForm = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const formObject = Object.fromEntries(formData);
+        setInfo("Kompilerer...");
+        try {
+          const response = await fetch("/api", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ code: formObject.inputArea }),
+          });
+          if (!response.ok) {
+            const data = await response.json();
+            throw Error(data.error);
+          }
+          const data = await response.json();
+          setInfo("Kompileringen var vellykket");
+          outputArea.value = data.result;
+        } catch (error) {
+          setInfo("Noe gikk galt, sjekk loggen");
+          outputArea.value = error;
+        }
+        setTimeout(() => setInfo(""), 5000);
+      };
+      const setInfo = (text) => (info.innerHTML = text);
+    </script>
+  </body>
+</html>

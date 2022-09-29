@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:500,600');
+
+* {
+  padding: 0;
+  font-family: 'Krub', sans-serif;
+  --primary-background: #464d49;
+  --secondary-background: #545b57;
+  --text-color: #ffffff;
+  --primary-button: #cfded5;
+  --primary-button-text: #454a47;
+  --secondary-button: #c9b1c0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Krub', sans-serif;
+  background: var(--primary-background);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

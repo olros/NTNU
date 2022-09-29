@@ -1,0 +1,16 @@
+{
+  "name": "Rombestilling",
+  "short_name": "Rombestilling",
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Reserver et rom nå!",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "274x272",
+      "type": "image/png",
+      "density": "4.0"
+    }
+  ]
+}

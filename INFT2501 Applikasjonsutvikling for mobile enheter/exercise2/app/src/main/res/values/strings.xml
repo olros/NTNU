@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Exercise2</string>
+    <string name="generate_random_number">Generer tall</string>
+    <string name="generer_et_tilfeldig_tall">Generer et tilfeldig tall</string>
+    <string name="exercise2">Exercise2</string>
+    <string name="add">Adder</string>
+    <string name="multiply">Multipliser</string>
+    <string name="answer">Svar:</string>
+    <string name="upperLimit">Øvre grense:</string>
+    <string name="correct">Riktig!</string>
+    <string name="number">Tall</string>
+    <string name="try_again">Prøv igjen</string>
+    <string name="wrong_the_correct_answer_is">Feil. Riktig svar er</string>
+</resources>

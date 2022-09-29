@@ -1,0 +1,7 @@
+root = true
+
+[*.{kt,kts}]
+indent_style = space
+indent_size=4
+insert_final_newline=true
+disabled_rules=no-wildcard-imports,indent,trailing-space

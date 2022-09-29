@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="contacts-pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:contactsdb;create=true"/>
+            <property name="javax.persistence.jdbc.user" value="app"/>
+            <property name="javax.persistence.jdbc.password" value="app"/>
+
+            <property name="eclipselink.target-database" value="Derby"/>
+
+            <!-- Alternatives: create-tables, drop-and-create-tables-->
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <!-- Alternatives: FINE (logs all SQL), ALL, CONFIG, INFO, WARNING..., OFF -->
+            <property name="eclipselink.logging.level" value="OFF"/>
+
+            <!--
+             The Database can be pre-filled with entries during startup. This would be very useful during testing
+             of the application, used in conjunction with "drop-and-create-tables". The SQL-statements for inserting
+             entries in the DB-table can be stored in a text-file. The line below, when un-commented, will
+             read SQL-statements from the file "META-INF/sql/data.sql" during application startup.
+             -->
+            <!--property name="javax.persistence.sql-load-script-source" value="META-INF/sql/data.sql"/-->
+
+        </properties>
+    </persistence-unit>
+
+</persistence>

@@ -1,0 +1,14 @@
+{
+  "title": "Hangman | INFT2501 Project",
+  "info_paragraph1": "Hi! Welcome to this Hangman-app!",
+  "info_paragraph2": "Hangman is a game where you're trying to guess a word which is represented by a row of dashes. Each dash represents a letter of the word. If you guess a letter that occurs in the word, the letter is filled in on all its correct positions.",
+  "info_paragraph3": "If you guess a letter that doesn't occur in the word, a new part hanged stick figure is drawed. The game is over when the drawing is finished (you loose), or when you've guessed the entire word (you win).",
+  "info_paragraph4": "If you want to read the rules again after starting the game, you can always click the back button to go back here.",
+  "info_paragraph5": "The game is available in two languages: English and Norwegian. Change the language in your System Settings to change the game language.",
+  "info_play": "Play game!",
+  "game_you_won": "You guessed the correct word. Congratulations!",
+  "game_you_lost": "You used to many tries and the stick-man was unfortunately hanged :( The correct word was: ",
+  "game_restart": "Restart game",
+  "game_letters": "abcdefghijklmnopqrstuvwxyz",
+  "game_words": "Football,Pizza,Buss,Paragraph,Smartphone,Money,Airplane,TV"
+}

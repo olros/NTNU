@@ -1,0 +1,11 @@
+gym
+numpy
+torch
+gym-super-mario-bros
+pylint
+black == 19.10b0
+isort
+flake8
+wandb
+opencv-python
+tqdm

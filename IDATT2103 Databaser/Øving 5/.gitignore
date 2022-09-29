@@ -1,0 +1,9 @@
+*.properties
+*.classpath
+.settings
+*.project
+*.class
+/test
+/.idea
+/target
+/scripts/oving5/target/

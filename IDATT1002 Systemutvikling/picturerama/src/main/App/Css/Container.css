@@ -1,0 +1,9 @@
+.button {
+    -fx-background-radius: 15px 0px 0px 15px;
+    -fx-background-color: WHITE;
+    -fx-cursor: hand;
+}
+
+.button:focused, .button:hover {
+    -fx-background-color: #00000022;
+}

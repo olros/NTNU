@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/olafr/Dropbox/IT/Bachelor/IDATT2202 Operativsystemer/Assignment 2/Code/main.c
+stdio.h
+-
+pthread.h
+-
+

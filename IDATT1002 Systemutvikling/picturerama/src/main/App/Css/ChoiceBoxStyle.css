@@ -1,0 +1,26 @@
+.choice-box {
+    -fx-background-color: WHITE;
+    -fx-border-color: #656565;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-pref-width: 700;
+    -fx-pref-height: 20;
+}
+
+.choice-box > .label {
+    -fx-font-size: 17;
+    -fx-pref-height: 20;
+}
+
+.choice-box .context-menu {
+    -fx-font-size: 17;
+    -fx-pref-width: 325;
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #DDDDDD;
+    -fx-background-color: white;
+    -fx-background-radius: 15px
+}
+

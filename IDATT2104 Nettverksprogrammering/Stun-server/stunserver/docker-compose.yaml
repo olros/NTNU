@@ -1,0 +1,16 @@
+version: '3'
+services: 
+    server:
+      container_name: stunserver
+      environment:
+        - UDPPORT=3478
+      build: .
+      ports:
+      - "3478:3478"
+      - "3478:3478/udp"
+      - "5349:5349"
+    test:
+      container_name: tests
+      build: 
+        context: .
+        dockerfile: ./tests/Dockerfile

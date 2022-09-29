@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+questions.md
+saved/
+
+# Logging
+video/
+wandb/

@@ -1,0 +1,36 @@
+name: Testing for stunserver
+
+on: [pull_request]
+
+jobs:
+  check_should_skip:
+    name: Check if stun server has been updated
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          github_token: ${{ github.token }}
+          cancel_others: 'false'
+          paths: '["stunserver/**", "makefile", "docker-compose.yml"]'
+
+  build:
+    needs: check_should_skip
+    if: ${{ needs.check_should_skip.outputs.should_skip != 'true' }}
+    name: Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./stunserver
+    steps:
+    - uses: actions/checkout@v1
+    - name: install dependencies
+      run: sudo apt-get install openssl -y && sudo apt-get install libssl-dev -y
+    - name: Running tests
+      run: g++-10 -std=c++20 tests/runTests.cpp -o tests/runTests -pthread -lssl -lcrypto && tests/runTests
+    - name: Compile code
+      run: g++-10 -std=c++20 main.cpp -o main -pthread -lssl -lcrypto
+
+      

@@ -1,0 +1,30 @@
+{
+  "short_name": "Snakk",
+  "name": "Snakk - Videosamtaler gjort enkelt",
+  "icons": [
+    {
+      "src": "logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#cfded5",
+  "background_color": "#464d49"
+}

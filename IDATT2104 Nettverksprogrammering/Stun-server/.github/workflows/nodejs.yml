@@ -1,0 +1,48 @@
+name: Lint, test and build
+
+on: [pull_request]
+
+jobs:
+  check_should_skip:
+    name: Check if frontend has been updated
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          github_token: ${{ github.token }}
+          cancel_others: 'false'
+          paths: '["frontend/**"]'
+
+  build:
+    needs: check_should_skip
+    if: ${{ needs.check_should_skip.outputs.should_skip != 'true' }}
+    name: Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Lint
+      run: yarn lint
+      
+    - name: Test
+      run: yarn test
+      
+    - name: Build
+      run: yarn build

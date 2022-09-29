@@ -1,0 +1,27 @@
+.check-box {
+    -fx-padding: 10px 37px;
+}
+
+.check-box > .box {
+    -fx-padding: 15px;
+    -fx-body-color: white;
+    -fx-background-color: -fx-outer-border,
+    -fx-body-color;
+    -fx-border-radius: 3;
+    -fx-border-color: #616161;
+    -fx-outer-border: #cadbec;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3px, 0px;
+    -fx-cursor: hand;
+}
+
+.check-box:hover > .box, .check-box:focused > .box {
+    -fx-body-color: #f1f1f1;
+}
+
+.check-box > .box > .mark {
+    -fx-padding: 15px;
+    -fx-shape: "M14.596,2.055L12.455,0C9.687,2.884,6.011,6.714,5.158,7.602L2.055,4.624L0,6.765l5.242,5.037l0.003-0.004 l0.003,0.004L14.596,2.055z";
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
