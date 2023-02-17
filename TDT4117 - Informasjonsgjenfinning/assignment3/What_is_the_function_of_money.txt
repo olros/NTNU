@@ -1,0 +1,26 @@
+[('money', '0.34'), ('function', '0.94')]
+[paragraph 29]
+
+chapter iv.
+of the origin and use of money.
+
+[paragraph 79]
+
+    
+      when the stock which a man possesses is no more than sufficient to
+      maintain him for a few days or a few weeks, he seldom thinks of deriving
+      any revenue from it. he consumes it as sparingly as he can, and
+
+[paragraph 80]
+
+chapter ii.
+of money, considered as a particular
+branch of the general stock of the society, or of the expense of maintaining
+the national capital.
+
+[topic 9]
+-0.503*"iv" + 0.204*"divis" + -0.185*"lent" + -0.179*"money" + 0.178*"vii" + -0.173*"silver" + -0.171*"book" + -0.167*"stock" + -0.158*"capit" + 0.135*"chapter"
+[topic 90]
+0.220*"drawback" + 0.206*"lent" + -0.187*"coloni" + -0.166*"contribut" + -0.163*"circul" + 0.154*"compon" + -0.138*"seastick" + -0.129*"commerc" + -0.125*"wool" + 0.123*"2"
+[topic 99]
+-0.185*"money" + -0.157*"cultiv" + -0.124*"manufactur" + -0.114*"real" + 0.113*"differ" + 0.104*"ceas" + 0.095*"cloth" + -0.094*"origin" + -0.093*"food" + -0.092*"parish"

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.30
+    container_name: db
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=sd
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=sd
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: phpmyadmin
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password

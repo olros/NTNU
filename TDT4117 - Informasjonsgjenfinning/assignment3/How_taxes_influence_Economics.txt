@@ -1,0 +1,28 @@
+[('influenc', '0.44'), ('tax', '0.32'), ('econom', '0.84')]
+[paragraph 157]
+
+    
+      part ii. of taxes.
+    
+      the private revenue of individuals, it has been shown in the first book of
+
+[paragraph 158]
+
+    
+      appendix to articles i. and ii.—taxes upon the capital value of
+      lands, houses, and stock.
+    
+
+[paragraph 164]
+      under the old malt tax, indeed, is comprehended a tax of four shillings
+      upon the hogshead of cyder, and another of ten shillings upon the barrel
+      of mum. in 1774, the tax upon cyder produced only £3,083:6:8. it probably
+      fell somewhat short of its usual amount; all the different taxes upon
+      cyder, having, that year, produced less than ordinary. the tax upon mum,
+
+[topic 27]
+-0.233*"tax" + -0.233*"capit" + 0.218*"commonwealth" + -0.194*"viii" + 0.181*"ix" + 0.179*"profit" + 0.158*"restraint" + 0.155*"stock" + -0.154*"unproduct" + -0.153*"bushel"
+[topic 18]
+-0.287*"refund" + 0.253*"divis" + 0.226*"introduct" + 0.215*"plan" + 0.212*"tax" + -0.194*"electron" + 0.169*"upon" + -0.166*"1f3" + 0.152*"iv" + -0.147*"vii"
+[topic 13]
+0.473*"adam" + 0.305*"smith" + 0.282*"0" + -0.251*"1" + -0.209*"tax" + -0.177*"2" + -0.159*"10" + -0.153*"6" + 0.131*"v" + -0.117*"upon"

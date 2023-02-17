@@ -1,0 +1,135 @@
+----------------------------------------------------------------------
+Assignment 1 – AI fundamentals and intelligent agents - Olaf Rosendahl
+----------------------------------------------------------------------
+
+Theoretical Questions
+1. What is Artificial Intelligence (AI)? Include at least 3 definitions of AI that are not covered in the
+lecture.
+
+- Artificial intelligence has no clear definition, but there is a lot of different definitions that varies by how one think the system should think and act.
+  The quotes below shows some definitions by different people:  
+
+  - Kurzweil, 1990: "The art of creating machines that perform functions that require intelligence when performed by people"
+  - Schalkoff, 1990: "A field of study that seeks to explain and emulate intelligent behavior in terms of computational processes"
+  - Winston, 1992: "The study of the computations that make it possible to perceive, reason, and act"
+
+2. What is the Turing test? What is its purpose and how is it conducted?
+
+- A Turing test is a test which may be used to check if a computer has artificial intelligence.
+  It is conducted by letting a human ask questions and use the answers and other sensory impressions to determine if the respondant is a person or computer.
+  The computer do have artificial intelligence if the questioner isn't able to determine if the respondant is a person or computer.
+
+3. What is rationality?
+
+- Rationality is the ability to execute "the right action", based on the currently known facts and knowledge.
+  One may think of it as a measure of the ideal performance that can be acieved.
+
+4. What is the difference between thinking rationally and acting rationally? Is rational thinking an
+absolute condition for acting rationally?
+
+- Rational thinking is when logic is used to find the right decision or conclusion.
+  Acting rationally, on the other hand, is about making the "right decision" which maximizes the outcome, given the known information.
+
+  Rational thinking can be part of rational action, but it doesn't have to. Rational actions can be done without logic/thinking, for example reflexes.
+  The Touring test is an example of a test where rational action is needed and rational thinking not always will be part of the actions. 
+
+5. What is the connection between knowledge and action according to Aristotle? How can his argument be used to implement his idea in AI?
+(a) Who was (or were) the first AI researcher(s) to implement these ideas?
+(b) What is the name of the program or system they developed? Write a short description about it.
+
+- Aristotle created syllogisms which provided patterns which found the correct action based on the given knowledge. This was a way to define how to "think correctly"
+  In AI, this may be used by using logic until a conclusion is found. If there is no logical conclusion, the program will enter an infinite loop.
+- (a) The first researchers to implement Artistotle's algoritm was Newell and Simon
+- (b) It was called General Problem Solver. The program could solve any problem that was expressed with formulas or Horn clauses,
+  and with a directed graph between the sources and the sinks could in theory be solved. Real-world problems was however not that easy to solve since
+  the search for a conclusion quickly would lead to a too high problem complexity due to combinatorics. (Wikipedia contributors, 2021)
+
+6. Consider a robot with the task of crossing the road, and an action portfolio A:
+A = {lookBack, lookForward, lookLeft, lookRight, goForward, goBack, goLeft, goRight}
+• While crossing the road, an elk crashes on the robot and smashes it. Is the robot rational?
+
+- Yes, assuming that the elk could not be seen. A rational robot can't be expected to expect everything.
+  Even though the robot had looked around, an elk could still suddenly have emerged from behind a tree and smashed it.
+
+• While crossing the road on a green light, a passing car drives into the robot and crashes,
+preventing the robot from crossing to the other side. Is the robot rational?
+
+- Yes. By crossing the road on a green light, the robot a done some rational thinking knowing that when the light is green, it's save to cross.
+  Nobody could have expected that a passing car would ignore its red light.
+
+7. Consider the vacuum cleaner world described in Figure 2.2 (Chapter 2.1 of AIMA 4th Ed.). Let
+us modify this vacuum environment such that the agent is penalized 1 point for each movement:
+• Could a simple reflex agent be rational for this environment? Why?
+
+- No. Since it can know if the current position contains dirt, it can suck the dirt if it exists.
+  It will never know whether the other location contains dirt or if the other location recently have been cleaned.
+  The robot must therefore always move to the other location to check and potentially clean it, most of the moves will therefore be penalized.
+
+• Could a reflex agent with state be rational in this environment? Why?
+
+- Yes. By knowing where the agent have been before and when, it can through time find out how often a location needs to be vacuumed and
+  therefore not move too often and get unnecessary penalties.
+
+• Assume now that the simple reflex agent (i.e. no internal state) can perceive the clean status
+of both locations at the same time. Could this agent be rational? Why? In case it could be
+rational, write the agent function using mathematical notation.
+
+- Yes. Because it known the clean status of both locations at all times, it can delay movement to the other location until it's dirty.
+  That will lead to maximizing the potential score. This can be written like the following with mathematical notation:
+
+  P = {CurrentDirty, RightDirty, LeftDirty}
+  A = {Clean, MoveRight, MoveLeft}
+  f: P* -> A
+
+8. Consider the original vacuum cleaner environment shown in Figure 2.2. Describe the environment using the properties from Chapter 2.3.2 (e.g. episodic/sequential, deterministic/stochastic,
+etc.) Explain why you chose such values and properties.
+
+- The environment is:
+  - partially observable -> Only the status of the location where the cleaner is positioned is known.
+  - single-agent -> There is only one cleaner
+  - deterministic -> The next state of the location is determined by the cleaner
+  - sequential -> Decisions of cleaning affects whether the location is clean in the next episode
+  - dynamic -> The location's status may be changed, with dirt being added at any time 
+  - continuous -> Time passes, unrelated by whether the robot acts or not
+
+9. Write both advantages and limitations of the following types of agents:
+• Simple reflex agents
+
+- Advantages:
+  - Simple implementation
+
+- Limitations:
+  - Limited intelligence
+  - Single states can be difficult to understand and act rationally from
+  - Easy to end up in an infinite loop (which may be escaped with randomized actions)
+
+• Model-based reflex agents
+
+- Advantages:
+  - Handles partial observability since the agent can keep track of the unknown
+
+- Limitations:
+  - The state will almost never known partially observable environments exaclty, but a best guess.
+    Actions will therefore also be based on the best guess
+  - Has no goal but only acts based on events/reflexes 
+
+• Goal-based agents
+
+- Advantages:
+  - Since the agent has a goal, it can make decisions based on what it thinks may be most profitable in the future
+
+- Limitations:
+  - Less effective and more complex since it has to predict/think about future goal achievement
+
+• Utility-based agents
+
+- Advantages:
+  - More flexible than goal-based agents and they can learn from previous actions.
+
+- Limitations:
+  - Difficult to create models which maximizes utility
+
+References:
+
+- Russell, S. & Norvig, P. (2021). Artificial Intelligence A Modern Approach 4th edition. Pearson Education.
+- Wikipedia contributors. (2021, March 6). General Problem Solver. In Wikipedia, The Free Encyclopedia. Retrieved 12:39, August 25, 2022, from https://en.wikipedia.org/w/index.php?title=General_Problem_Solver&oldid=1010719225
