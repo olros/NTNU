@@ -1,0 +1,73 @@
+station_id,name,city,region,neighborhood,street,postcode,latitude,longitude,location,status
+2537,West & 6th St.,Austin,Texas,Downtown,720 West 6th Street,78701,30.27041,-97.75046,(30.27041 -97.75046),active
+2572,Barton Springs Pool,Austin,Texas,Barton Hills,2131 William Barton Drive,78746,30.26452,-97.7712,(30.26452 -97.7712),active
+2545,ACC - Rio Grande & 12th,Austin,Texas,Downtown,Moonlight Tower (12th & Rio Grande),78701,30.27595,-97.74739,(30.27595 -97.74739),closed
+1004,Red River & LBJ Library,Austin,Texas,University of Texas,2315 Red River Street,78705,30.2848,-97.72756,(30.2848 -97.72756),closed
+1008,Nueces @ 3rd,Austin,Texas,Downtown,300 Nueces Street,78701,30.26694,-97.74939,(30.26694 -97.74939),moved
+2500,Republic Square,Austin,Texas,Downtown,325 San Antonio Street,78701,30.267509999999998,-97.74802,(30.26751 -97.74802),moved
+2504,South Congress & Elizabeth,Austin,Texas,Bouldin,1500 South Congress Avenue,78704,30.24891,-97.75019,(30.24891 -97.75019),active
+2536,Waller & 6th St.,Austin,Texas,East Cesar Chavez,607 Waller Street,78702,30.264609999999998,-97.73049,(30.26461 -97.73049),closed
+2542,Plaza Saltillo,Austin,Texas,East Cesar Chavez,1501 East 5th Street,78702,30.26217,-97.72743,(30.26217 -97.72743),active
+2548,UT West Mall @ Guadalupe,Austin,Texas,West University,2234 Guadalupe Street,78705,30.285759999999996,-97.74181,(30.28576 -97.74181),active
+2561,State Capitol Visitors Garage @ San Jacinto & 12th,Austin,Texas,Downtown,1201 San Jacinto Boulevard,78701,30.273359999999997,-97.73805,(30.27336 -97.73805),active
+2565,Trinity & 6th Street,Austin,Texas,Downtown,606 Trinity Street,78701,30.26735,-97.73933000000001,(30.26735 -97.73933),active
+2566,Pfluger Bridge @ W 2nd Street,Austin,Texas,Downtown,903 2nd St,78701,30.26717,-97.75484,(30.26717 -97.75484),active
+2571,Red River & 8th Street,Austin,Texas,Downtown,802 Red River Street,78701,30.26854,-97.73646,(30.26854 -97.73646),active
+2576,Rainey @ River St,Austin,Texas,Downtown,61 Rainey Street,78701,30.258020000000002,-97.7391,(30.25802 -97.7391),closed
+2707,Rainey St @ Cummings,Austin,Texas,Downtown,38 Rainey Street,78701,30.25579,-97.73982,(30.25579 -97.73982),active
+3294,Guadalupe & 6th,Austin,Texas,Downtown,601 Guadalupe Street,78701,30.269109999999998,-97.7462,(30.26911 -97.7462),active
+3377,MoPac Pedestrian Bridge @ Veterans Drive,Austin,Texas,Old West Austin,2001 Stephen F Austin Drive,78703,30.274659999999997,-97.77028,(30.27466 -97.77028),active
+3513,South Congress & Barton Springs at the Austin American-Statesman,Austin,Texas,South River City,311 Congress Avenue,78704,30.258390000000002,-97.74592,(30.25839 -97.74592),active
+3621,Nueces & 3rd,Austin,Texas,Downtown,300 Nueces Street,78701,30.26697,-97.74929,(30.26697 -97.74929),active
+3684,Congress & Cesar Chavez,Austin,Texas,Downtown,101 Cesar Chavez St,78701,30.26332,-97.74508,(30.26332 -97.74508),active
+3685,Henderson & 9th,Austin,Texas,Downtown,605 Henderson Street,78703,30.272170000000003,-97.75246,(30.27217 -97.75246),active
+3686,Sterzing at Barton Springs,Austin,Texas,Barton Hills,1808 Barton Springs Road,78704,30.264059999999997,-97.76385,(30.26406 -97.76385),active
+1005,State Parking Garage @ Brazos & 18th,Austin,Texas,Downtown,1709 Brazos Street,78701,30.27907,-97.73715,(30.27907 -97.73715),closed
+2503,South Congress & James,Austin,Texas,Bouldin,1300 South Congress Avenue,78704,30.25103,-97.74925999999999,(30.25103 -97.74926),active
+2574,Zilker Park,Austin,Texas,Barton Hills,2131 Barton Springs Road,78746,30.2659,-97.76822,(30.2659 -97.76822),active
+2712,Toomey Rd @ South Lamar,Austin,Texas,Zilker,1426 Toomey Road,78704,30.263040000000004,-97.75824,(30.26304 -97.75824),closed
+2550,Republic Square @ Guadalupe & 4th St.,Austin,Texas,Downtown,422 Guadalupe Street,78701,30.267740000000003,-97.74691999999999,(30.26774 -97.74692),moved
+2562,San Jacinto & 8th Street,Austin,Texas,Downtown,Omni Austin Downtown Gift Shop,78701,30.26912,-97.73986,(30.26912 -97.73986),active
+2570,South Congress & Academy,Austin,Texas,South River City,100 Academy Drive,78704,30.252259999999996,-97.74854,(30.25226 -97.74854),active
+2575,Riverside @ S. Lamar,Austin,Texas,Zilker,1300 West Riverside Drive,78704,30.264459999999996,-97.75665,(30.26446 -97.75665),active
+3291,11th & San Jacinto,Austin,Texas,Downtown,300 11th St,78701,30.271929999999998,-97.73854,(30.27193 -97.73854),active
+3455,Republic Square @ Federal Courthouse Plaza,Austin,Texas,Downtown,325 San Antonio Street,78701,30.267529999999997,-97.74805,(30.26753 -97.74805),active
+1007,Lavaca & 6th,Austin,Texas,Downtown,618 Lavaca Street,78701,30.268890000000003,-97.74525,(30.26889 -97.74525),active
+2544,East 6th & Pedernales St.,Austin,Texas,Holly,2416 6th St,78702,30.25895,-97.71475,(30.25895 -97.71475),active
+2822,East 6th at Robert Martinez,Austin,Texas,Holly,2121 6th St,78702,30.26032,-97.71899,(30.26032 -97.71899),active
+3292,East 4th & Chicon,Austin,Texas,East Cesar Chavez,1807 4th St,78702,30.259870000000003,-97.72373,(30.25987 -97.72373),active
+3293,East 2nd & Pedernales,Austin,Texas,Holly,2414 East 2nd Street,78702,30.25542,-97.71665,(30.25542 -97.71665),active
+1001,OFFICE/Main/Shop/Repair,Austin,Texas,Downtown,1008 Brazos Street,78701,30.271859999999997,-97.73997,(30.27186 -97.73997),active
+2567,Palmer Auditorium,Austin,Texas,Bouldin,818 Barton Springs Road,78704,30.25971,-97.75346,(30.25971 -97.75346),active
+3660,Medina & East 6th,Austin,Texas,East Cesar Chavez,514 Medina,78702,30.26455,-97.73165,(30.26455 -97.73165),active
+2498,Convention Center / 4th St. @ MetroRail,Austin,Texas,Downtown,501 4th St,78701,30.26483,-97.73899999999999,(30.26483 -97.739),active
+2539,Convention Center / 3rd & Trinity,Austin,Texas,Downtown,221 Trinity Street,78701,30.264259999999997,-97.74023000000001,(30.26426 -97.74023),active
+2563,Davis at Rainey Street,Austin,Texas,Downtown,609 Davis Street,78701,30.26019,-97.73845,(30.26019 -97.73845),active
+2568,East 11th St. at Victory Grill,Austin,Texas,Central East Austin,1110 11th St,78702,30.268959999999996,-97.72843,(30.26896 -97.72843),active
+2569,East 11th St. & San Marcos,Austin,Texas,Central East Austin,1001 11th St,78702,30.269679999999997,-97.73074,(30.26968 -97.73074),active
+2502,Barton Springs & Riverside,Austin,Texas,Bouldin,416 Barton Springs Road,78704,30.2587,-97.74871999999999,(30.2587 -97.74872),active
+2546,ACC - West & 12th Street,Austin,Texas,Downtown,1202 West Avenue,78701,30.27624,-97.74831,(30.27624 -97.74831),closed
+2711,Barton Springs @ Kinney Ave,Austin,Texas,Zilker,1530 Barton Springs Road,78704,30.261999999999997,-97.76118000000001,(30.262 -97.76118),active
+1002,6th & Navasota St.,Austin,Texas,East Cesar Chavez,1313 6th St,78702,30.26383,-97.72864,(30.26383 -97.72864),closed
+1003,8th & Guadalupe,Austin,Texas,Downtown,700 Lavaca Street,78701,30.27106,-97.74563,(30.27106 -97.74563),closed
+1006,Zilker Park West,Austin,Texas,Barton Hills,2131 Barton Springs Road,78746,30.26587,-97.76826,(30.26587 -97.76826),ACL only
+2496,8th & Congress,Austin,Texas,Downtown,107 8th St,78701,30.2698,-97.74186,(30.2698 -97.74186),active
+2497,Capitol Station / Congress & 11th,Austin,Texas,Downtown,101 West 11th Street,78701,30.2726,-97.74127,(30.2726 -97.74127),active
+2499,City Hall / Lavaca & 2nd,Austin,Texas,Downtown,117 Lavaca Street,78701,30.26476,-97.74678,(30.26476 -97.74678),active
+2549,Long Center @ South 1st & Riverside,Austin,Texas,Bouldin,454 First St,78704,30.25941,-97.74971,(30.25941 -97.74971),active
+3464,Pease Park,Austin,Texas,Windsor Road,1105 Kingsbury Street,78703,30.28118,-97.75219,(30.28118 -97.75219),active
+2538,Bullock Museum @ Congress & MLK,Austin,Texas,Downtown,1807 Congress Avenue,78701,30.28039,-97.73809,(30.28039 -97.73809),active
+2540,17th & Guadalupe,Austin,Texas,Downtown,311 West 17th Street,78701,30.279740000000004,-97.74254,(30.27974 -97.74254),active
+2547,Guadalupe & 21st,Austin,Texas,West University,Dainty Hooligan,78705,30.28395,-97.74198,(30.28395 -97.74198),moved
+2823,Capital Metro HQ - East 5th at Broadway,Austin,Texas,Govalle,2910 East 5th Street,78702,30.2563,-97.71007,(30.2563 -97.71007),active
+3381,East 7th & Pleasant Valley,Austin,Texas,Holly,2751 East 7th Street,78702,30.26025,-97.71002,(30.26025 -97.71002),closed
+3390,Brazos & 6th,Austin,Texas,Downtown,516 Brazos Street,78701,30.267540000000004,-97.74154,(30.26754 -97.74154),active
+3619,6th & Congress,Austin,Texas,Downtown,524 Congress Avenue,78701,30.26822,-97.74285,(30.26822 -97.74285),active
+3635,13th & San Antonio,Austin,Texas,Downtown,501 West 13th Street,78701,30.276159999999997,-97.74488000000001,(30.27616 -97.74488),active
+3687,Boardwalk West,Austin,Texas,South River City,SoCo Aparments Dog Park,78704,30.25457,-97.74258,(30.25457 -97.74258),active
+2494,2nd & Congress,Austin,Texas,Downtown,107 2nd St,78701,30.26408,-97.74355,(30.26408 -97.74355),active
+2495,4th & Congress,Austin,Texas,Downtown,100 4th St,78701,30.266340000000003,-97.74378,(30.26634 -97.74378),active
+2552,3rd & West,Austin,Texas,Downtown,801 3rd St,78701,30.2678,-97.75189,(30.2678 -97.75189),active
+2501,5th & Bowie,Austin,Texas,Downtown,400 Bowie Street,78701,30.2696,-97.75332,(30.2696 -97.75332),active
+2564,5th & San Marcos,Austin,Texas,East Cesar Chavez,921 East 5th Street,78702,30.264159999999997,-97.73289,(30.26416 -97.73289),moved
+2541,State Capitol @ 14th & Colorado,Austin,Texas,Downtown,201 West 14th Street,78701,30.27654,-97.74155,(30.27654 -97.74155),active
